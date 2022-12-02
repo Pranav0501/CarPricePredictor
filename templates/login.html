@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+      <meta charset="utf-8">
+
+
+    <title>Login page</title>
+      <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+
+  </head>
+  <body>
+
+
+
+
+
+
+        <div class="login-box">
+    <img src="static/css/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+            <form class="form" method="post" action="/login_validation">
+            <label>email</label>
+            <input type="text" name="email" class="form-control" placeholder="Enter email id">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter Password">
+            <input type="submit" name="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+
+            </form>
+
+
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h5 style="color:red">{{ message }}</h5>
+                    {% endfor%}
+
+                {% endif %}
+
+            {% endwith %}
+
+            <a href="{{url_for('register')}}"><b>Don't have an account? Sign up</b></a>
+        </div>
+
+
+
+
+
+  </body>
+</html>

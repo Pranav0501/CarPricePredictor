@@ -1,0 +1,15 @@
+.{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+
+.backgroundColor{
+        background-color: #0097a7;
+
+    }
+
+.mt-50{
+    margin-top: 50px;
+}
+

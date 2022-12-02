@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styling.css">
+</head>
+<body>
+
+
+
+
+        <div class="register-box">
+    <img src="static/css/avatar.png" class="avatar">
+        <form class="form" method="post" action="/add_user">
+            <label>Name</label>
+            <input type="text" name="uname" class="form-control" placeholder="Enter email id">
+            <label>email</label>
+            <input type="text" name="uemail" class="form-control" placeholder="Enter email id">
+            <label>Password</label>
+            <input type="password" name="upassword" class="form-control" placeholder="Enter Password">
+            <input type="submit" name="submit" class="btn btn-primary btn-block btn-lg" value="Register">
+           <a href="{{url_for('login')}}">Already have an account? Sign in</a><br>
+            </form>
+
+
+
+
+
+
+
+        </div>
+</body>
+</html>
